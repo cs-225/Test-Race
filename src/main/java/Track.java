@@ -51,7 +51,10 @@ public class Track extends Group {
      * @param sceneX The width of the main Screen from View.
      * @param sceneY The height of the main Screen from View.
      */
-    public void setTrack(int numPlayers, double sceneX, double sceneY) {
+    public void setTrack(int numPlayers, double offset, double sceneX, double sceneY) {
+        createLocations();
+        createCars();
+        setGridPane();
     }
 
     /**
@@ -94,5 +97,6 @@ public class Track extends Group {
      * Handles changing the active car's location.
      */
     private EventHandler<MouseEvent> locationEvent = mouseEvent -> {
+        updateStats();
     };
 }

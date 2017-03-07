@@ -74,8 +74,7 @@ public class Car extends Rectangle {
     /**
      * @return The car's identification.
      */
-    public int getIdentifier() {
-        return id;
+    public int getIdentifier(){
     }
 
     /**
@@ -92,11 +91,11 @@ public class Car extends Rectangle {
      * @return True if the car has only the end location to visit before completion otherwise, false.
      */
     public boolean checkLast(int stop) {
-        return stops.size() + 1 >= stop;
     }
 
     /* Reports if the car has finished the race. */
-    public boolean isFinished() { return isFinished; }
+    public boolean isFinished() {
+    }
 
     /**
      * Moves a car from one location to another.

@@ -12,11 +12,6 @@ public class Location extends Circle {
     /** The name identifying the location */
     private String name;
 
-
-    /** Stores the cars present at a location. Thought to be needed for future improvements */
-    private ArrayList<Car> cars;
-
-
     /**
      * Keeps track within the running loop of each turn whether
      * a location has been clicked
@@ -38,14 +33,6 @@ public class Location extends Circle {
      * @return the name of the location
      */
     public String getName() { return name; }
-
-
-    /**
-     * @param car The car to be added as present. Useful for future growth and debugging
-     */
-    public void addCar(Car car) {
-    }
-
 
     /**
      * @return True if the location can be selected, otherwise false
